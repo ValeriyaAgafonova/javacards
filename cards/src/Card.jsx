@@ -3,10 +3,12 @@ import './App.css';
 function Card(props){
     function rotateCard(e){
         e.target.parentNode.classList.toggle('hover')
+
+       
     }
     return(
-        <div className="card" onClick={rotateCard}>
-            <div className="flipper">
+        <div className="card">
+            <div className="flipper" onClick={rotateCard}>
     <div className="front">
      {props.question}
       </div>
